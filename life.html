@@ -8,10 +8,11 @@
   <body ng-controller="MainController">
     <table class="lifeboard">
       <tr ng-repeat="row in board">
-        <td ng-repeat="cell in row track by $index" class="cell alive-{{cell}}" ng-click="cell = !cell">
+        <td ng-repeat="cell in row track by $index" class="cell alive-{{cell}}" ng-click="row[$index] = !row[$index]">
           
         </td>
       </tr>
     </table>
+    <button ng-click="startLife()" >{{isActive ? 'Stop' : 'Start'}} Life</button>
   </body>
 </html>
