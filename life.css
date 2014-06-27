@@ -1,0 +1,17 @@
+.lifeboard{
+	border-collapse: collapse;
+}
+
+.alive-true{
+	background-color: white;
+}
+
+.alive-false{
+	background-color: black;
+}
+
+.cell{
+	border-style: solid;
+	width: 20px;
+	height: 20px;
+}

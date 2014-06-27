@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
+    <script src="controller.js"></script>
+    <link rel="stylesheet" type="text/css" href="life.css">
+  </head>
+  <body ng-controller="MainController">
+    <table class="lifeboard">
+      <tr ng-repeat="row in board">
+        <td ng-repeat="cell in row track by $index" class="cell alive-{{cell}}" ng-click="cell = !cell">
+          
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
